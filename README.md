@@ -1,3 +1,6 @@
+
+https://github.com/DreamMaoMao/fantastic-tmux/assets/30348075/13b0a5ff-e78a-4346-a98c-150bebe5b7ef
+
 ## Configuration introduction:
 There are two modes, loose mode (default) and strict mode
 Strict mode can only use some common shortcuts. Generally, after entering tui applications such as vim, you can switch to strict mode to avoid shortcut key conflicts
@@ -81,6 +84,9 @@ Ctrl u
 ### Edit the entire terminal context with $EDITOR
 This feature allows you to edit and copy the content on the current terminal using any tui editor, such as nvim.
 The EDITOR is determined by the '$EDITOR' environment variable
+
+https://github.com/DreamMaoMao/fantastic-tmux/assets/30348075/9e7107f0-5af5-4f90-88ab-c21097e02b62
+
 | prefix | prefix |
 |  ----  | ----  |
 | Go to | leader e

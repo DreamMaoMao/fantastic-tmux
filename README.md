@@ -1,6 +1,3 @@
-
-https://github.com/DreamMaoMao/fantastic-tmux/assets/30348075/13b0a5ff-e78a-4346-a98c-150bebe5b7ef
-
 ## Configuration introduction:
 There are two modes, loose mode (default) and strict mode
 Strict mode can only use some common shortcuts. Generally, after entering tui applications such as vim, you can switch to strict mode to avoid shortcut key conflicts
@@ -30,6 +27,7 @@ Ctrl u
 | Switch to win8 |leader+ 8
 | Switch to win9 |leader+ 9
 | Rename win |leader+,
+| Move win to a specific location |leader+.
 
 ### pane
 | prefix | prefix |
@@ -73,20 +71,16 @@ Ctrl u
 | prefix | prefix |
 |  ----  | ----  |
 |leader+ [|] Enter the replication mode
-| Move the cursor in the direction |
+| Direction key /hjkl/HJKL | Move the cursor
 |space | Go to select mode
-| Move to | and select
+| Press the direction button /hjkl/HJKL | to move and select
 |enter | Confirm the selection
-|leader+] | Paste
-
+|leader+]/Ctrl + p | Paste
 'Tip: Hold down the shift key to do regular copy and paste with the mouse'
 
-### Edit the entire terminal context with $EDITOR
+### Edit the entire terminal text with $EDITOR
 This feature allows you to edit and copy the content on the current terminal using any tui editor, such as nvim.
 The EDITOR is determined by the '$EDITOR' environment variable
-
-https://github.com/DreamMaoMao/fantastic-tmux/assets/30348075/9e7107f0-5af5-4f90-88ab-c21097e02b62
-
 | prefix | prefix |
 |  ----  | ----  |
 | Go to | leader e
@@ -97,7 +91,7 @@ https://github.com/DreamMaoMao/fantastic-tmux/assets/30348075/9e7107f0-5af5-4f90
 | prefix | prefix |
 |  ----  | ----  |
 |alt + h/j/k/l | Toggle pane focus
-|C-s | Switches the layout
+|C-x | Switches the layout
 |alt + ;          | Switch Windows clockwise
 |alt + '| Swap the window counterclockwise
 
@@ -118,6 +112,8 @@ https://github.com/DreamMaoMao/fantastic-tmux/assets/30348075/9e7107f0-5af5-4f90
 |alt + m | Close the window
 |ctlr + h | Switch to the left window
 |ctrl + l | Switch to the right window
+|Alt + = | Moves the window to the right
+|Alt + -| Moves the window to the left
 
 
 ## tmux Common commands
@@ -141,3 +137,7 @@ Open the editor
 Lists all buffers' leader + = '
 Check and press enter to paste it in
 Clear buffer 'leader + -'
+
+## session save and restore
+leader + C-s Save
+The leader + C-r recovers

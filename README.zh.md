@@ -27,6 +27,7 @@ Ctrl u
 |切换到win8          |leader+ 8 
 |切换到win9          |leader+ 9 
 |重命名win           |leader+ ,
+|移动win到特定位置   |leader+ .
 
 ### pane
 |  表头   | 表头  |
@@ -70,12 +71,11 @@ Ctrl u
 |  表头   | 表头  |
 |  ----  | ----  |
 |leader+ [               |进入复制模式 
-|方向                    |移动光标 
+|方向按键/hjkl/HJKL      |移动光标 
 |space                   |切入选中模式 
-|方向                    |移动选中 
+|方向按键/hjkl/HJKL      |移动选中 
 |enter                   |确认选中 
-|leader+ ]               |粘贴
-
+|leader+ ]/Ctrl + p      |粘贴
 `提示:按住shift键就可以用鼠标进行常规的复制粘贴`
 
 ### 把整个终端的文本用$EDITOR编辑
@@ -91,7 +91,7 @@ Ctrl u
 |  表头   | 表头  |
 |  ----  | ----  |
 |alt + h/j/k/l   |切换pane聚焦
-|C-s             |切换布局
+|C-x             |切换布局
 |alt + ;         |顺时针交换窗口
 |alt + '         |逆时针交换窗口
 
@@ -112,6 +112,8 @@ Ctrl u
 |alt + m         |关闭窗口
 |ctlr + h        |切换到左边窗口
 |ctrl + l        |切换到右边窗口
+|Alt + =         |窗口向右移动         
+|Alt + -         |窗口向左移动         
 
 
 ## tmux 常用命令
@@ -136,3 +138,6 @@ Ctrl u
 选中按下enter就可以粘贴进去
 清理buffer `leader + -`
 
+## session 保存与恢复
+leader + C-s    保存
+leader + C-r    恢复

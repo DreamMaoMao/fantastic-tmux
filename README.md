@@ -4,7 +4,7 @@ Strict mode can only use some common shortcuts. Generally, after entering tui ap
 Loose mode allows for some additional Ctrl and Alt binding shortcuts
 
 ## Universal shortcut keys
-### Main key leader
+### prefix-key
 Alt-u
 
 ### Switch between strict mode and loose mode
@@ -13,77 +13,77 @@ Ctrl u
 ### window
 | prefix | prefix |
 |  ----  | ----  |
-| Create win |leader+ m
-| Destroy win |leader+ n
-| Focus on previous win |leader+ y
-| Focus on the latter win |leader+ u
-| Switch to win1 |leader+ 1
-| Switch to win2 |leader+ 2
-| Switch to win3 |leader+ 3
-| Switch to win4 |leader+ 4
-| Switch to win5 |leader+ 5
-| Switch to win6 |leader+ 6
-| Switch to win7 |leader+ 7
-| Switch to win8 |leader+ 8
-| Switch to win9 |leader+ 9
-| Rename win |leader+,
-| Move win to a specific location |leader+.
+| Create win |prefix-key+ m
+| Destroy win |prefix-key+ n
+| Focus on the previous win |prefix-key+ y
+| Focus on the latter win |prefix-key+ u
+| Switch to win1 |prefix-key+ 1
+| Switch to win2 |prefix-key+ 2
+| Switch to win3 |prefix-key+ 3
+| Switch to win4 |prefix-key+ 4
+| Switch to win5 |prefix-key+ 5
+| Switch to win6 |prefix-key+ 6
+| Switch to win7 |prefix-key+ 7
+| Switch to win8 |prefix-key+ 8
+| Switch to win9 |prefix-key+ 9
+| rename win      |prefix-key+ ,
+| Moves win to a specific location | prefix-key+ .
 
 ### pane
 | prefix | prefix |
 |  ----  | ----  |
-|pane moves to window 1 |leader+ shift-1
-|pane moves to window 2 |leader+ shift-2
-|pane moves to window 3 |leader+ shift-3
-|pane moves to window 4 |leader+ shift-4
-|pane moves to window 5 |leader+ shift-5
-|pane moves to window 6 |leader+ shift-6
-|pane moves to window 7 |leader+ shift-7
-|pane moves to window 8 |leader+ shift-8
-|pane moves to window 9 |leader+ shift-9
-| Split the pane to the right |leader+ p
-| Split pane down |leader+ o
-| Focus on the left pane |leader+ h
-| Focus on the right pane |leader+ l
-| Focus on top pane |leader+ k
-| Focus lower pane |leader+ j
-| Full screen pane |leader+ a
-| Deletes the pane |leader+ i
-|pane enter |leader+ s simultaneously
-| Global Select a pane to the right of the current pane |leader+ P
-| Global Select a pane and place it below the current pane |leader+ o
-| Put pane in new window |leader+ b
-| Jump to a specific number pane |leader+ q
+|pane moves to window 1 |prefix-key+ shift-1
+|pane moves to window 2 |prefix-key+ shift-2
+|pane moves to window 3 |prefix-key+ shift-3
+|pane moves to window 4 |prefix-key+ shift-4
+|pane moves to window 5 |prefix-key+ shift-5
+|pane moves to window 6 |prefix-key+ shift-6
+|pane moves to window 7 |prefix-key+ shift-7
+|pane moves to window 8 |prefix-key+ shift-8
+|pane moves to window 9 |prefix-key+ shift-9
+| Split pane to the right |prefix-key+ p
+| Split-down pane |prefix-key+ o
+| Focus on the left pane |prefix-key+ h
+| Focus on the right pane |prefix-key+ l
+| Focus on the up pane |prefix-key+ k
+| Focus on the down pane |prefix-key+ j
+| Full-screen pane |prefix-key+ a
+| Deletes pane |prefix-key+ i
+| pane input sync toggle |prefix-key+ s
+| Select a pane and place it right to the right of the current pane | prefix-key+ P
+| Select a pane and place it down to the current pane | prefix-key+ o
+| Places pane in a new window |prefix-key+ b
+| focus a pane by show number | prefix-key+ q
 
 ### Positioning
 | prefix | prefix |
 |  ----  | ----  |
-| Fuzzy Name Lookup pane |leader+ f
-| Global Preview Select pane |leader+ w
+| search pane by input a fuzzy name|prefix-key+ f
+| global preview to select pane |prefix-key+ w
 
 ### Configuration
 | prefix | prefix |
 |  ----  | ----  |
-| Overloaded |leader+ r
-| suspends the session |leader+ d
+| reload config |prefix-key+ r
+| detach the session |prefix-key+ d
 
 ### Copy and paste
 | prefix | prefix |
 |  ----  | ----  |
-|leader+ [|] Enter the replication mode
-| Direction key /hjkl/HJKL | Move the cursor
-|space | Go to select mode
-| Press the direction button /hjkl/HJKL | to move and select
+|prefix-key+ [  | enter copy mode
+| Direction key /hjkl/HJKL | Move the cursor in copy mode
+|space | enter the visual mode
+| Direction key /hjkl/HJKL | move cursor to select
 |enter | Confirm the selection
-|leader+]/Ctrl + p | Paste
-'Tip: Hold down the shift key to do regular copy and paste with the mouse'
+|prefix-key+]/Ctrl + p | paste 
+`Tip: Hold down the shift key to do regular copy and paste with the mouse`
 
 ### Edit the entire terminal text with $EDITOR
 This feature allows you to edit and copy the content on the current terminal using any tui editor, such as nvim.
 The EDITOR is determined by the '$EDITOR' environment variable
 | prefix | prefix |
 |  ----  | ----  |
-| Go to | leader e
+| Enter | prefix-key e
 
 ## Loose mode can use shortcut keys
 
@@ -92,18 +92,18 @@ The EDITOR is determined by the '$EDITOR' environment variable
 |  ----  | ----  |
 |alt + h/j/k/l | Toggle pane focus
 |C-x | Switches the layout
-|alt + ;          | Switch Windows clockwise
-|alt + '| Swap the window counterclockwise
+|alt + ;          | Swap Windows clockwise
+|alt + '            | Swap the window counterclockwise
 
 ## pane size adjustment
 | prefix | prefix |
 |  ----  | ----  |
-| is at |C-k
-| |C-j
-| left |C-h
-| right |C-l
+| up |C-k
+| down |C-j
+| left |C-n
+| right |C-o
 | maximize |C-f
-'Mouse drag can also be adjusted'
+`Mouse drag can also be adjusted`
 
 ### window
 | prefix | prefix |
@@ -134,10 +134,10 @@ The EDITOR is determined by the '$EDITOR' environment variable
 ## buffer
 Each copy mode copies something in a separate buffer
 Open the editor
-Lists all buffers' leader + = '
+Lists all buffer 'prefix-key + ='
 Check and press enter to paste it in
-Clear buffer 'leader + -'
+Example Clear buffer 'prefix-key + -'
 
 ## session save and restore
-leader + C-s Save
-The leader + C-r recovers
+prefix-key + C-s saves the Settings
+prefix-key + C-r is restored

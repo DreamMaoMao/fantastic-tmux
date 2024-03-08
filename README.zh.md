@@ -4,7 +4,7 @@
 宽松模式可以额外的一些Ctrl 和 Alt绑定的快捷键
 
 ## 通用快捷键
-### 主按键leader
+### 前缀按键(prefix-key)
 Alt-u
 
 ### 严格模式和宽松模式切换 
@@ -13,69 +13,69 @@ Ctrl u
 ### window
 |  表头   | 表头  |
 |  ----  | ----  |
-|创建win             |leader+ m
-|销毁win             |leader+ n
-|聚焦前一个win       |leader+ y
-|聚焦后一个win       |leader+ u
-|切换到win1          |leader+ 1 
-|切换到win2          |leader+ 2 
-|切换到win3          |leader+ 3 
-|切换到win4          |leader+ 4 
-|切换到win5          |leader+ 5 
-|切换到win6          |leader+ 6 
-|切换到win7          |leader+ 7 
-|切换到win8          |leader+ 8 
-|切换到win9          |leader+ 9 
-|重命名win           |leader+ ,
-|移动win到特定位置   |leader+ .
+|创建win             |prefix-key+ m
+|销毁win             |prefix-key+ n
+|聚焦前一个win       |prefix-key+ y
+|聚焦后一个win       |prefix-key+ u
+|切换到win1          |prefix-key+ 1 
+|切换到win2          |prefix-key+ 2 
+|切换到win3          |prefix-key+ 3 
+|切换到win4          |prefix-key+ 4 
+|切换到win5          |prefix-key+ 5 
+|切换到win6          |prefix-key+ 6 
+|切换到win7          |prefix-key+ 7 
+|切换到win8          |prefix-key+ 8 
+|切换到win9          |prefix-key+ 9 
+|重命名win           |prefix-key+ ,
+|移动win到特定位置   |prefix-key+ .
 
 ### pane
 |  表头   | 表头  |
 |  ----  | ----  |
-|pane移动到窗口1                     |leader+ shift-1 
-|pane移动到窗口2                     |leader+ shift-2 
-|pane移动到窗口3                     |leader+ shift-3 
-|pane移动到窗口4                     |leader+ shift-4 
-|pane移动到窗口5                     |leader+ shift-5 
-|pane移动到窗口6                     |leader+ shift-6 
-|pane移动到窗口7                     |leader+ shift-7 
-|pane移动到窗口8                     |leader+ shift-8 
-|pane移动到窗口9                     |leader+ shift-9 
-|向右分割pane                        |leader+ p
-|向下分割pane                        |leader+ o
-|聚焦左边pane                        |leader+ h
-|聚焦右边pane                        |leader+ l
-|聚焦上边pane                        |leader+ k
-|聚焦下边pane                        |leader+ j
-|全屏pane                            |leader+ a
-|删除pane                            |leader+ i
-|pane同步输入                        |leader+ s
-|全局选择一个pane放在当前pane右边    |leader+ P
-|全局选择一个pane放在当前pane下边    |leader+ o
-|把pane放到新窗口                    |leader+ b
-|跳转到特定数字pane                  |leader+ q
+|pane移动到窗口1                     |prefix-key+ shift-1 
+|pane移动到窗口2                     |prefix-key+ shift-2 
+|pane移动到窗口3                     |prefix-key+ shift-3 
+|pane移动到窗口4                     |prefix-key+ shift-4 
+|pane移动到窗口5                     |prefix-key+ shift-5 
+|pane移动到窗口6                     |prefix-key+ shift-6 
+|pane移动到窗口7                     |prefix-key+ shift-7 
+|pane移动到窗口8                     |prefix-key+ shift-8 
+|pane移动到窗口9                     |prefix-key+ shift-9 
+|向右分割pane                        |prefix-key+ p
+|向下分割pane                        |prefix-key+ o
+|聚焦左边pane                        |prefix-key+ h
+|聚焦右边pane                        |prefix-key+ l
+|聚焦上边pane                        |prefix-key+ k
+|聚焦下边pane                        |prefix-key+ j
+|全屏pane                            |prefix-key+ a
+|删除pane                            |prefix-key+ i
+|pane同步输入                        |prefix-key+ s
+|全局选择一个pane放在当前pane右边    |prefix-key+ P
+|全局选择一个pane放在当前pane下边    |prefix-key+ o
+|把pane放到新窗口                    |prefix-key+ b
+|跳转到特定数字pane                  |prefix-key+ q
 
 ### 定位
 |  表头   | 表头  |
 |  ----  | ----  |
-|模糊名查找pane          |leader+ f
-|全局预览选择pane        |leader+ w
+|模糊名查找pane          |prefix-key+ f
+|全局预览选择pane        |prefix-key+ w
 
 ### 配置
 |  表头   | 表头  |
 |  ----  | ----  |
-|重载配置                |leader+ r
-|挂起session             |leader+ d
+|重载配置                |prefix-key+ r
+|挂起session             |prefix-key+ d
 
 ### 复制粘贴
 |  表头   | 表头  |
 |  ----  | ----  |
-|leader+ [               |进入复制模式 
+|prefix-key+ [               |进入复制模式 
 |方向按键/hjkl/HJKL      |移动光标 
 |space                   |切入选中模式 
 |方向按键/hjkl/HJKL      |移动选中 
 |enter                   |确认选中 
-|leader+ ]/Ctrl + p      |粘贴
+|prefix-key+ ]/Ctrl + p      |粘贴
 `提示:按住shift键就可以用鼠标进行常规的复制粘贴`
 
 ### 把整个终端的文本用$EDITOR编辑
@@ -83,7 +83,7 @@ Ctrl u
 编辑器由`$EDITOR`环境变量确定
 |  表头   | 表头  |
 |  ----  | ----  |
-|进入 | leader e 
+|进入 | prefix-key e 
 
 ## 宽松模式可以使用的快捷键
 
@@ -100,8 +100,8 @@ Ctrl u
 |  ----  | ----  |
 |上         |C-k
 |下         |C-j
-|左         |C-h
-|右         |C-l
+|左         |C-n
+|右         |C-o
 |最大化     |C-f
 `鼠标拖动也可以调整`
 
@@ -134,10 +134,10 @@ Ctrl u
 ## buffer
 每次复制模式复制的东西都会存在一个单独的buffer里
 打开编辑器
-列出全部buffer `leader + =`
+列出全部buffer `prefix-key + =`
 选中按下enter就可以粘贴进去
-清理buffer `leader + -`
+清理buffer `prefix-key + -`
 
 ## session 保存与恢复
-leader + C-s    保存
-leader + C-r    恢复
+prefix-key + C-s    保存
+prefix-key + C-r    恢复

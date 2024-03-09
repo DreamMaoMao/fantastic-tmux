@@ -3,6 +3,8 @@ There are two modes, loose mode (default) and strict mode
 Strict mode can only use some common shortcuts. Generally, after entering tui applications such as vim, you can switch to strict mode to avoid shortcut key conflicts
 Loose mode allows for some additional Ctrl and Alt binding shortcuts
 
+https://github.com/DreamMaoMao/fantastic-tmux/assets/30348075/2a51302a-75d9-4ec0-a343-414d880535f6
+
 ## Universal shortcut keys
 ### prefix-key
 Alt-u
